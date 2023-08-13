@@ -20,12 +20,11 @@ public class Algo_8 {
 
         /*------------------------PART02---------------------------- */
 
-        System.out.print("\nnumA \u222A numB : ");
-        for (int i = 0; i < numA.length; i++) {
-            System.out.print(numA[i] + " ,");   
-                  
-        }
-
+        // for (int i = 0; i < numB.length; i++) {
+        //     for (int j = 0; j < numB.length; j++) {
+                
+        //     }
+        // }
        
 
     }
