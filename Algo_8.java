@@ -20,12 +20,44 @@ public class Algo_8 {
 
         /*------------------------PART02---------------------------- */
 
-        // for (int i = 0; i < numB.length; i++) {
-        //     for (int j = 0; j < numB.length; j++) {
-                
-        //     }
-        // }
+        int[] absArray = new int[numA.length + numB.length];
+        int index = 0;
+
+        for (int i = 0; i < numA.length; i++) {
+            boolean flag = false;
+            for (int j = 0; j < index; j++) {
+                if(absArray[i]==numA[i]){
+                    flag = true;
+                    break;
+                }
+            }
+
+            if(!flag){
+                absArray[index++]=numA[i];
+            }
+            
+        }
+
+        for (int i = 0; i < numB.length; i++) {
+            boolean flag = false;
+            for (int j = 0; j < index; j++) {
+                if(absArray[i]==numB[i]){
+                    flag = true;
+                    break;
+                }
+            }
+
+            if(!flag){
+                absArray[index++]=numB[i];
+            }
+            
+        }
+
+        for (int i = 0; i < index; i++) {
+            System.out.print(absArray[i] + " ,");
+        }
        
+        //        error here
 
     }
     
